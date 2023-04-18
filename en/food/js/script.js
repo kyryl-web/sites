@@ -233,7 +233,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const message = {
     loading: 'Loading',
     success: 'Thank you! We will contact you soon',
-    failure: 'Something went wrong, sorry...'
+    failure: 'Something went wrong...'
   };
 
   forms.forEach(item => {

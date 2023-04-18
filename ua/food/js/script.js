@@ -244,10 +244,8 @@ window.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      const statusMessage = document.createElement('div');
-      statusMessage.classList.add('status');
-      statusMessage.textContent = message.loading;
-      form.append.statusMessage;
+      form.insertAdjacentHTML('afterend', `<div class="status">${message.loading}</div>`);
+      const statusMessage = document.querySelector('.status');
 
       const request = new XMLHttpRequest();
       request.open('POST', 'server.php');
