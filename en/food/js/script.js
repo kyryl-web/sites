@@ -233,7 +233,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const message = {
     loading: 'Loading',
     success: 'Thank you! We will contact you soon',
-    failure: 'Something went wrong, so...'
+    failure: 'Something went wrong, sorry...'
   };
 
   forms.forEach(item => {
@@ -243,11 +243,11 @@ window.addEventListener('DOMContentLoaded', () => {
   function postData(form) {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
-
+      console.log('sub')
       const statusMessage = document.createElement('div');
       statusMessage.classList.add('status');
       statusMessage.textContent = message.loading;
-      form.append.statusMessage;
+      form.append(statusMessage);
 
       const request = new XMLHttpRequest();
       request.open('POST', 'server.php');
@@ -274,6 +274,9 @@ window.addEventListener('DOMContentLoaded', () => {
           }, 2000);
         } else {
           statusMessage.textContent = message.failure;
+          // setTimeout(() => {
+          //   statusMessage.remove();
+          // }, 2000);
         }
       })
     });
