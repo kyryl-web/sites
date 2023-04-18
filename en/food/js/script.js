@@ -43,7 +43,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let p = document.createElement('div');
   p.classList.add('tabheader__item');
-  p.innerHTML = 'Спорт';
+  p.innerHTML = 'Sport';
   tabsParent.append(p);
 
 
@@ -189,8 +189,8 @@ window.addEventListener('DOMContentLoaded', () => {
             <div class="menu__item-descr">${this.descr}</div>
             <div class="menu__item-divider"></div>
             <div class="menu__item-price">
-              <div class="menu__item-cost">Цена:</div>
-              <div class="menu__item-total"><span>${this.price}</span> грн/день</div>
+              <div class="menu__item-cost">Price:</div>
+              <div class="menu__item-total"><span>${this.price}</span> uah/day</div>
           </div>`;
       this.parent.append(element);
     }
@@ -199,8 +199,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/vegy.jpg",
     "very",
-    'Меню "Фитнес"',
-    'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    'Menu "Fitness"',
+    'Menu "Fitness" is a new approach to cooking: more fresh vegetables and fruits. Product of active and healthy people. It is a brand new product with optimal price and high quality!',
     15,
     '.menu__field .container',
   ).renderCard();
@@ -208,8 +208,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/elite.jpg",
     "elite",
-    'Меню “Премиум"',
-    'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
+    'Menu "Premium"',
+    'In the menu "Premium" we use not only beautiful packaging design, but also quality dishes. Red fish, seafood, fruit - restaurant menu without going to restaurant!',
     20,
     '.menu__field .container',
     'menu__item'
@@ -218,8 +218,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/post.jpg",
     "post",
-    'Меню "Постное"',
-    'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
+    'Menu "Lean"',
+    'The "Lean" menu is a careful selection of ingredients: complete absence of animal products, milk from almonds, oats, coconut or buckwheat, the right amount of protein due to tofu and imported vegetarian steaks.',
     25,
     '.menu__field .container',
     'menu__item'
@@ -231,9 +231,9 @@ window.addEventListener('DOMContentLoaded', () => {
   const forms = document.querySelectorAll('form');
 
   const message = {
-    loading: 'Загрузка',
-    success: 'Сасибо! Скоро мы с вами свяжемся',
-    failure: 'Что-то пошло не так...'
+    loading: 'Loading',
+    success: 'Thank you! We will contact you soon',
+    failure: 'Something went wrong, so...'
   };
 
   forms.forEach(item => {
