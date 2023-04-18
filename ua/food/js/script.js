@@ -41,15 +41,15 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  let p = document.createElement('div');
-  p.classList.add('tabheader__item');
-  p.innerHTML = 'Спорт';
-  tabsParent.append(p);
+  // let p = document.createElement('div');
+  // p.classList.add('tabheader__item');
+  // p.innerHTML = 'Спорт';
+  // tabsParent.append(p);
 
 
   // ----------------Timer--------------------------
 
-  let date = '2023-10-29T21:20:00';
+  let date = '2023-05-29T00:00:00';
 
   function getDate(date) {
     date = Date.parse(date);
@@ -199,8 +199,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/vegy.jpg",
     "very",
-    'Меню "Фитнес"',
-    'Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!',
+    'Меню "Фітнес"',
+    'Меню «Фітнес» - це новий підхід до приготування їжі: більше свіжих овочів і фруктів. Продукт активних і здорових людей. Це абсолютно новий продукт з оптимальною ціною і високою якістю!',
     15,
     '.menu__field .container',
   ).renderCard();
@@ -208,8 +208,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/elite.jpg",
     "elite",
-    'Меню “Премиум"',
-    'В меню “Премиум” мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!',
+    'Меню “Преміум"',
+    'У меню «Преміум» ми використовуємо не тільки красивий дизайн упаковки, але і якісні страви. Червона риба, морепродукти, фрукти - меню ресторану без походу в ресторан!',
     20,
     '.menu__field .container',
     'menu__item'
@@ -218,8 +218,8 @@ window.addEventListener('DOMContentLoaded', () => {
   new Card(
     "img/tabs/post.jpg",
     "post",
-    'Меню "Постное"',
-    'Меню “Постное” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.',
+    'Меню "Пісне"',
+    'Меню Пісне - це ретельний підбір інгредієнтів: повна відсутність продуктів тваринного походження, молоко з мигдалю, вівса, кокоса або гречки, правильна кількість білка за рахунок тофу і імпортних вегетаріанських стейків.',
     25,
     '.menu__field .container',
     'menu__item'
@@ -232,8 +232,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   const message = {
     loading: 'Загрузка',
-    success: 'Сасибо! Скоро мы с вами свяжемся',
-    failure: 'Что-то пошло не так...'
+    success: "Дякую! Скоро ми з вами зв'яжемося",
+    failure: 'Щось пішло не так...'
   };
 
   forms.forEach(item => {
@@ -272,6 +272,9 @@ window.addEventListener('DOMContentLoaded', () => {
           }, 2000);
         } else {
           statusMessage.textContent = message.failure;
+          setTimeout(() => {
+            statusMessage.remove();
+          }, 2000);
         }
       })
     });

@@ -41,10 +41,10 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  let p = document.createElement('div');
-  p.classList.add('tabheader__item');
-  p.innerHTML = 'Sport';
-  tabsParent.append(p);
+  // let p = document.createElement('div');
+  // p.classList.add('tabheader__item');
+  // p.innerHTML = 'Sport';
+  // tabsParent.append(p);
 
 
   // ----------------Timer--------------------------

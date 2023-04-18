@@ -27,3 +27,9 @@
     opacity: .5;
     transition: opacity .6s ease;
 }
+
+.status {
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
+}
