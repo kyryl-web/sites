@@ -17904,7 +17904,7 @@ __webpack_require__.r(__webpack_exports__);
 
 window.addEventListener('DOMContentLoaded', function () {
   var modalState = {};
-  var deadline = '2023-04-10';
+  var deadline = '2023-06-10';
   var scroll = Object(_modules_calcScroll__WEBPACK_IMPORTED_MODULE_7__["default"])();
   Object(_modules_changeModalState__WEBPACK_IMPORTED_MODULE_4__["default"])(modalState);
   Object(_modules_modals__WEBPACK_IMPORTED_MODULE_1__["default"])(scroll);
